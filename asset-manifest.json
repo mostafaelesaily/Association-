@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Association-/static/css/main.6ed349ca.css",
+    "main.js": "/Association-/static/js/main.9f8fca5d.js",
+    "index.html": "/Association-/index.html",
+    "main.6ed349ca.css.map": "/Association-/static/css/main.6ed349ca.css.map",
+    "main.9f8fca5d.js.map": "/Association-/static/js/main.9f8fca5d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ed349ca.css",
+    "static/js/main.9f8fca5d.js"
+  ]
+}
