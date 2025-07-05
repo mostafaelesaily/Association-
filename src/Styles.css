@@ -1,0 +1,322 @@
+/* General Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #f8f9fa;
+}
+
+.dark-mode .card,
+.dark-mode .modal-content,
+.dark-mode .table {
+  background-color: #2d2d2d;
+  color: #f8f9fa;
+  border-color: #444;
+}
+
+.dark-mode .table th,
+.dark-mode .table td {
+  border-color: #444;
+}
+
+.dark-mode .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .text-muted {
+  color: #aaa !important;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container.rtl {
+  direction: rtl;
+}
+
+.app-container.ltr {
+  direction: ltr;
+}
+
+/* Navbar Styles */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border: none;
+}
+
+.register-card {
+  background-color: #fff;
+}
+
+/* Button Styles */
+.btn {
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #4e73df;
+  border-color: #4e73df;
+}
+
+.btn-primary:hover {
+  background-color: #2e59d9;
+  border-color: #2653d4;
+}
+
+.btn-outline-primary {
+  color: #4e73df;
+  border-color: #4e73df;
+}
+
+.btn-outline-primary:hover {
+  background-color: #4e73df;
+  border-color: #4e73df;
+}
+
+/* Form Styles */
+.form-control {
+  padding: 0.75rem 1rem;
+  border-radius: 0.35rem;
+  border: 1px solid #d1d3e2;
+}
+
+.form-control:focus {
+  border-color: #bac8f3;
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+}
+
+/* Profile Photo Upload */
+.profile-photo-upload {
+  position: relative;
+  display: inline-block;
+}
+
+.upload-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #4e73df;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+  background: #2e59d9;
+}
+
+/* Payment Method Cards */
+.payment-method-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.payment-method-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.payment-method-card.selected {
+  border: 2px solid #4e73df;
+  background-color: #f8f9fe;
+}
+
+/* Animation Styles */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .welcome-card {
+    padding: 1.5rem;
+  }
+
+  .register-card {
+    padding: 1rem;
+  }
+}
+
+/* Dark Mode Adjustments */
+.dark-mode .card {
+  background-color: #2d2d2d;
+  color: #f8f9fa;
+}
+
+.dark-mode .form-control {
+  background-color: #3d3d3d;
+  border-color: #444;
+  color: #f8f9fa;
+}
+
+.dark-mode .payment-method-card {
+  background-color: #3d3d3d;
+}
+
+.dark-mode .payment-method-card.selected {
+  background-color: #4d4d4d;
+}
+
+.dark-mode .table {
+  color: #f8f9fa;
+}
+
+.dark-mode .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Activity Timeline */
+.activity-timeline {
+  border-left: 2px solid #4e73df;
+  padding-left: 20px;
+}
+
+.activity-item {
+  position: relative;
+  padding-left: 10px;
+}
+
+.activity-item::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4e73df;
+}
+
+.dark-mode .activity-timeline {
+  border-left-color: #6c8af0;
+}
+
+.dark-mode .activity-item::before {
+  background-color: #6c8af0;
+}
+
+/* Badge Styles */
+.badge {
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+}
+
+/* Range Input Styles */
+.form-range::-webkit-slider-thumb {
+  background: #4e73df;
+}
+
+.form-range::-moz-range-thumb {
+  background: #4e73df;
+}
+
+.form-range::-ms-thumb {
+  background: #4e73df;
+}
+
+/* Modal Styles */
+.modal-content {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* List Group Styles */
+.list-group-item {
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .list-group-item {
+  background-color: #3d3d3d;
+  border-color: #444;
+  color: #f8f9fa;
+}
+
+/* Responsive Container for Charts */
+.recharts-responsive-container {
+  margin: 0 auto;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
